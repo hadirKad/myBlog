@@ -1,6 +1,10 @@
 <h1>parent Component</h1>
 
+<!-- the val send from child to parent -->
+<h4>{{val}}</h4>
+
+
 <!-- send the name var in parent component as var called userName in the child component -->
 <!-- send the obj with name data to the child with name objData -->
-
-<app-child [userName] = "name" [objData] = "data"></app-child>
+<!-- send parentFunction that will send val from child to parent -->
+<app-child [userName] = "name" [objData] = "data"  (parentFunction) = "parentFunction($event)"></app-child>

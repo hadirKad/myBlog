@@ -17,4 +17,10 @@ export class ParentComponent {
       age : '40'
     },
   ]
+
+  val = ""
+  parentFunction(val : any){
+    console.warn(val)
+    this.val = val 
+  }
 }
