@@ -1,0 +1,17 @@
+<h1>style binding in angular</h1>
+
+<!-- simple style in angular -->
+<h3 style="color: red;">red color</h3>
+
+<!-- style binding in angular -->
+<h3 [style.color] = "'green'">green color</h3>
+
+<!-- style binding in angular with ts value -->
+<h3 [style.color] = "color">color text</h3>
+
+<!-- style binding in angular with condition -->
+<h3 [style.color] = "err?'red':'green'">conditional style</h3>
+
+
+<button (click) = "updateColor()">Update Color</button>
+<button (click) = "updateErr()">Update Err</button>

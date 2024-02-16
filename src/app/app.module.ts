@@ -7,7 +7,8 @@ import { HomeComponent } from './home/home.component';
 import { ConditionStatementComponent } from './condition-statement/condition-statement.component';
 import { LoopComponent } from './loop/loop.component';
 import { SimpleFormComponent } from './simple-form/simple-form.component';
-import{FormsModule} from '@angular/forms'
+import{FormsModule} from '@angular/forms';
+import { StyleBindingComponent } from './style-binding/style-binding.component'
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import{FormsModule} from '@angular/forms'
     HomeComponent,
     ConditionStatementComponent,
     LoopComponent,
-    SimpleFormComponent
+    SimpleFormComponent,
+    StyleBindingComponent
   ],
   imports: [
     BrowserModule,
