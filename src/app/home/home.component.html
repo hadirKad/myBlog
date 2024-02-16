@@ -1,1 +1,8 @@
-<p>home works!</p>
+<h1>Hadir Blog</h1>
+<h2>{{title}}</h2>
+<h2>{{getName("hadir")}}</h2>
+<h1 (mouseover)="mouseOverFunc()" (mouseleave)="mouseLeaveFunc()" >mouse events</h1>
+
+<input type="text"  #boxValue/>
+<button (click)="getTextValue(boxValue.value)">get input value</button>
+<h2>{{textBoxValue}}</h2>

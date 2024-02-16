@@ -1,0 +1,23 @@
+
+<ng-template [ngIf] = "show">
+    <h1>if block</h1>
+</ng-template>
+
+<ng-template [ngIf] != "show">
+    <h1>else block</h1>
+</ng-template>
+
+<ng-template [ngIf] = "isShow == 'yes'">
+    <h1>yes block</h1>
+</ng-template>
+
+<ng-template [ngIf] = "color == 'red'">
+    <h1>red block</h1>
+</ng-template>
+
+<div [ngSwitch] = "color">
+    <h1 *ngSwitchCase = "'red'" style= "color: red;"> red color</h1>
+    <h1 *ngSwitchCase = "'green'" style= "color: green;"> green color</h1>
+    <h1 *ngSwitchCase = "'yellow'" style= "color: yellow;"> yellow color</h1>
+    <h1 *ngSwitchDefault style= "color: grey;"> default color</h1>
+</div>
