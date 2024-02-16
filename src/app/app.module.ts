@@ -17,6 +17,7 @@ import { ChildComponent } from './child/child.component';
 import { PipeComponent } from './pipe/pipe.component';
 import { BasicRoutingComponent } from './basic-routing/basic-routing.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { MainComponent } from './main/main.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     PipeComponent,
     BasicRoutingComponent,
     PageNotFoundComponent,
+    MainComponent,
   ],
   imports: [
     BrowserModule,
