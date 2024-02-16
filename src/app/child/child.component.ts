@@ -18,7 +18,10 @@ export class ChildComponent {
       {name : "hadir" , age : "25"},
       {name : "bruce" , age : "38"}  ]
 
-    this.parentFunction.emit(data)  
+    this.parentFunction.emit(data[1].name)  
+  }
+
+  getData(){
     this.parentFunction.emit("hadir")
   }
 }
