@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ConditionStatementComponent } from './condition-statement/condition-statement.component';
+import { LoopComponent } from './loop/loop.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    ConditionStatementComponent
+    ConditionStatementComponent,
+    LoopComponent
   ],
   imports: [
     BrowserModule,
