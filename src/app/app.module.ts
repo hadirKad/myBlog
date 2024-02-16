@@ -12,6 +12,8 @@ import { StyleBindingComponent } from './style-binding/style-binding.component';
 import { MaterialUiComponent } from './material-ui/material-ui.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import {MatButtonModule} from '@angular/material/button';
     SimpleFormComponent,
     StyleBindingComponent,
     MaterialUiComponent,
+    ParentComponent,
+    ChildComponent,
   ],
   imports: [
     BrowserModule,
