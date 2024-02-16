@@ -1,0 +1,25 @@
+<h1>simple form in angular</h1>
+<!-- don't forget to import formsModule in app.module.ts file -->
+
+<!-- #simpleForm is the key of the form and ngForm is it type -->
+<form #simpleForm = "ngForm"  (ngSubmit) = "getValues(simpleForm.value)">
+    
+    <!-- ngModel means that this input in belong to the form 
+        if you don't add it the input value will not add to the form value -->
+    <!-- the result without ngModel in the age
+         Object { user: "hadir", address: "mila", password: "1234" } -->
+    <input type="text"  ngModel name="user" placeholder="enter user name" >
+    <br><br>
+
+    <input type="text" ngModel  name="age" placeholder="enter user age" >
+    <br><br>
+
+    <input type="text"  ngModel name="address" placeholder="enter user address" >
+    <br><br>
+
+    <input type="password"  ngModel name="password" placeholder="enter user password" >
+    <br><br>
+
+    <button>Get user values</button>
+    <!-- Object { user: "hadir", age: "23", address: "mila", password: "1234" } -->
+</form>

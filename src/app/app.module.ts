@@ -6,17 +6,21 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ConditionStatementComponent } from './condition-statement/condition-statement.component';
 import { LoopComponent } from './loop/loop.component';
+import { SimpleFormComponent } from './simple-form/simple-form.component';
+import{FormsModule} from '@angular/forms'
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ConditionStatementComponent,
-    LoopComponent
+    LoopComponent,
+    SimpleFormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

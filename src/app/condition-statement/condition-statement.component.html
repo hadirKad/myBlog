@@ -1,20 +1,23 @@
 <h1>condition statements in angular</h1>
+<!-- boolean if statement -->
+<!-- show if block text when show == true -->
 <ng-template [ngIf] = "show">
     <h1>if block</h1>
 </ng-template>
-
+<!-- show if block text when show == false -->
 <ng-template [ngIf] != "show">
     <h1>else block</h1>
 </ng-template>
-
+<!-- string value if statement -->
+<!-- show yes block text when isShow == yes -->
 <ng-template [ngIf] = "isShow == 'yes'">
     <h1>yes block</h1>
 </ng-template>
-
+<!-- show yes block text when color == red -->
 <ng-template [ngIf] = "color == 'red'">
     <h1>red block</h1>
 </ng-template>
-
+<!-- switch statement -->
 <div [ngSwitch] = "color">
     <h1 *ngSwitchCase = "'red'" style= "color: red;"> red color</h1>
     <h1 *ngSwitchCase = "'green'" style= "color: green;"> green color</h1>
