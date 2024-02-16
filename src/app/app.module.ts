@@ -15,6 +15,8 @@ import {MatButtonModule} from '@angular/material/button';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { PipeComponent } from './pipe/pipe.component';
+import { BasicRoutingComponent } from './basic-routing/basic-routing.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,8 @@ import { PipeComponent } from './pipe/pipe.component';
     ParentComponent,
     ChildComponent,
     PipeComponent,
+    BasicRoutingComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
