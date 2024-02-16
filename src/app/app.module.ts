@@ -8,7 +8,10 @@ import { ConditionStatementComponent } from './condition-statement/condition-sta
 import { LoopComponent } from './loop/loop.component';
 import { SimpleFormComponent } from './simple-form/simple-form.component';
 import{FormsModule} from '@angular/forms';
-import { StyleBindingComponent } from './style-binding/style-binding.component'
+import { StyleBindingComponent } from './style-binding/style-binding.component';
+import { MaterialUiComponent } from './material-ui/material-ui.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -17,12 +20,15 @@ import { StyleBindingComponent } from './style-binding/style-binding.component'
     ConditionStatementComponent,
     LoopComponent,
     SimpleFormComponent,
-    StyleBindingComponent
+    StyleBindingComponent,
+    MaterialUiComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

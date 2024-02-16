@@ -1,8 +1,15 @@
 <h1>Hadir Blog</h1>
+<!-- interpolation in angular which means use var from ts file -->
 <h2>{{title}}</h2>
+
+<!-- function interpolation -->
 <h2>{{getName("hadir")}}</h2>
+
+<!-- mouseOver and mouseLeave events -->
 <h1 (mouseover)="mouseOverFunc()" (mouseleave)="mouseLeaveFunc()" >mouse events</h1>
 
+<!-- get input value
+ -->
 <input type="text"  #boxValue/>
 <button (click)="getTextValue(boxValue.value)">get input value</button>
 <h2>{{textBoxValue}}</h2>
