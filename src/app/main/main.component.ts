@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import{LocalServiceService} from 'src/app/services/local-service.service';
 import{CallApiServiceService} from 'src/app/services/call-api-service.service';
+import{user} from'src/app/models/user'
 
 @Component({
   selector: 'app-main',
@@ -10,6 +11,12 @@ import{CallApiServiceService} from 'src/app/services/call-api-service.service';
 export class MainComponent {
   name = ""
   data :any
+  
+  dataType:user[] = [{
+    name : "hadir",
+    id : 1,
+    userId : 12,
+ }]
 
   constructor(private localService :LocalServiceService , private apiSevice : CallApiServiceService){
      console.warn(this.localService.getData())

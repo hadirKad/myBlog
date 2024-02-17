@@ -83,10 +83,11 @@ nvm list
 ## app file
 - in app file you found the components by default app.component.
 - app.component :
-  1.app.component.css (style).
-  2.app.component.html (ui).
-  3.app.component.ts (logic).
-  4.app.component.spec.ts (test unit).
+
+  1. app.component.css (style).
+  2. app.component.html (ui).
+  3. app.component.ts (logic).
+  4. app.component.spec.ts (test unit).
 
 - create new component.  
  ```bash
